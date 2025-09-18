@@ -2,16 +2,16 @@
   "label": "C/C++: gcc build active file",
   "type": "cppbuild",
   "command": "/usr/bin/gcc",
-  "args": [
+"args": [
     "-Wall",
-    "-lm",
     "-Wextra",
     "-Wpedantic",
     "-g",
     "${file}",
     "-o",
-    "${fileDirname}/${fileBasenameNoExtension}"
-  ],
+    "${fileDirname}/${fileBasenameNoExtension}",
+    "-lm"
+],
   "group": {
     "kind": "build",
     "isDefault": true
