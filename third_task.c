@@ -14,7 +14,15 @@ Hint: if you have used nested loops, try to simplify your solution! A single loo
 
 int main()
 {
+    double e = 1;
+    double a = 1;
 
+    for (int i = 1; i <= 20; i++){
+        a *= i;
+        e += 1/a;
+    }
 
+    printf("%f\n", e);
 
+    return 0;
 }

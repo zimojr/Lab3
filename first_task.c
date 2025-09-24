@@ -15,7 +15,11 @@ Print the pruduct.*/
 #include<stdio.h>
 
 int main(){
-
-
-
+    int num = 1;
+    for (int i = 1; i <= 10; i++){
+        
+        num *= i;
+    }
+    printf("%d\n",num);
+    return 0;
 }

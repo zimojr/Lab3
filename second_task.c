@@ -8,7 +8,16 @@ Hint: Sum of divisors implies applying summation: a loop, and summing in the acc
 #include <stdio.h>
 
 int main(){
-
-
-
+    int sum = 0;
+    int num;
+    printf("Type in a number: ");
+    scanf("%d", &num);
+    for (int i = 1; i <= num; i++){
+        if (num % i == 0){
+            sum += i;
+            printf("%d", i);
+        }
+    }
+    printf("The sum of the number's divisors is %d \n", sum);
+    return 0;
 }
